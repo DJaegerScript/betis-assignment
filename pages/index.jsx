@@ -6,26 +6,6 @@ const Home = () => {
   return (
     <main>
       <section className='flex flex-col w-full h-screen gap-4 bg-betis'>
-        <nav className='grid items-center w-full grid-cols-2 p-30-betis'>
-          <div>
-            <Image
-              alt='betis logo'
-              src='/assets/betis.svg'
-              width={38.25}
-              height={38.72}
-            />
-          </div>
-          <div className='justify-self-end'>
-            <button className='md:hidden'>
-              <Image
-                alt='dropdown icon'
-                src='/assets/burger.svg'
-                width={28}
-                height={23}
-              />
-            </button>
-          </div>
-        </nav>
         <div className='flex flex-col items-center w-full h-full gap-8'>
           <div className='flex flex-col items-center'>
             <span className='text-xl font-bold leading-9 text-center text-red-betis'>
