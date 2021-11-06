@@ -1,12 +1,16 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Header from '../components/global/Header';
+import Navbar from '../components/global/Navbar';
 
 const Layout = ({ children }) => {
   return (
-    <main>
-      <Navbar />
-      {children}
-    </main>
+    <>
+      <Header />
+      <main>
+        <Navbar />
+        {children}
+      </main>
+    </>
   );
 };
 
