@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroTitle from './HeroTitle';
-import AnchorButton from '../../Button/AnchorButton';
+import AnchorButton from '../../global/Button/AnchorButton';
 import HeroDecoration from './HeroDecoration';
 
 const HeroSection = () => {
