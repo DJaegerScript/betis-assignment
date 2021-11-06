@@ -1,7 +1,7 @@
 const menus = {
   home: '/',
   about: '/about',
-  alur: '/alur',
+  faq: '/faq',
 };
 
 export default menus;
