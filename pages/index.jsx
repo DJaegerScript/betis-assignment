@@ -1,34 +1,13 @@
 import React from 'react';
 
 import Image from 'next/image';
+import HeroSection from '../app/components/Home/HeroSection';
 
 const Home = () => {
   return (
     <main>
-      <section className='flex flex-col w-full h-screen gap-4 bg-betis'>
-        <div className='flex flex-col items-center w-full h-full gap-8'>
-          <div className='flex flex-col items-center'>
-            <span className='text-xl font-bold leading-9 text-center text-red-betis'>
-              Find Your Dream, <br /> Explore The Future.
-            </span>
-            <h1 className='font-bold text-5xl-betis text-brown-betis'>
-              BETIS 2022
-            </h1>
-          </div>
-          <button className='px-10 py-3 text-lg font-bold text-white rounded-sm bg-brown-betis'>
-            LOG IN
-          </button>
-          <div className='relative flex justify-center w-full h-full'>
-            <Image
-              alt='hero image'
-              src='/assets/child_in_log.svg'
-              width={300}
-              height={450}
-              className='z-10'
-            />
-            <div className='absolute bottom-0 w-full h-20 bg-ground-betis'></div>
-          </div>
-        </div>
+      <section className='flex flex-col items-center justify-center w-full h-screen bg-betis'>
+        <HeroSection />
       </section>
       <section className='w-full'>
         <div className='flex flex-col items-center w-full h-full gap-20 py-16 bg-silver-betis'>
