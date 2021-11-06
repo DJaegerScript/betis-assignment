@@ -6,7 +6,7 @@ import Collapsible from './Collapsible';
 import menus from './utils/menus';
 import NavLink from './NavLink';
 import { v4 as uuid } from 'uuid';
-import LoginButton from './LoginButton';
+import AnchorButton from '../Button/AnchorButton';
 
 const Navbar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed grid items-center w-full grid-cols-2 px-30-betis py-3 z-20 ${
+      className={`fixed grid items-center w-full grid-cols-2 px-30-betis py-3 z-30 ${
         isExpanded || isScroll ? 'bg-green-betis' : 'bg-transparent'
       }`}
     >
@@ -51,12 +51,20 @@ const Navbar = () => {
                 key={uuid()}
                 url={menus[menu]}
                 label={menu.toUpperCase()}
-                className={`text-green-betis flex justify-center w-1/4`}
+                className={` flex justify-end w-1/4 ${
+                  !isScroll ? 'text-green-betis' : 'text-white'
+                }`}
               />
             );
           })}
-          <div className='flex justify-center w-1/4 text-green-betis'>
-            <LoginButton />
+          <div className='flex justify-end w-1/4 text-green-betis'>
+            <AnchorButton
+              url={'/login'}
+              label={'LOG IN'}
+              className={
+                'text-white lg:hover:bg-ground-betis lg:hover:text-white hover:text-black bg-green-betis'
+              }
+            />
           </div>
         </div>
         <button

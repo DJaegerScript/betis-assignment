@@ -2,7 +2,7 @@ import React from 'react';
 import { v4 as uuid } from 'uuid';
 import NavLink from './NavLink';
 import menus from './utils/menus';
-import LoginButton from './LoginButton';
+import AnchorButton from '../Button/AnchorButton';
 
 const Collapsible = ({ expanded }) => {
   return (
@@ -20,7 +20,13 @@ const Collapsible = ({ expanded }) => {
           </div>
         );
       })}
-      <LoginButton />
+      <AnchorButton
+        url={'/login'}
+        label={'LOG IN'}
+        className={
+          'text-white lg:hover:bg-ground-betis lg:hover:text-white hover:text-black bg-green-betis'
+        }
+      />
     </div>
   );
 };
