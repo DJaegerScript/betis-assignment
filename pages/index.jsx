@@ -2,6 +2,7 @@ import React from 'react';
 
 import Image from 'next/image';
 import HeroSection from '../app/components/Home/HeroSection';
+import TestimonialSection from '../app/components/Home/TestimonialSection';
 
 const Home = () => {
   return (
@@ -10,34 +11,7 @@ const Home = () => {
         <HeroSection />
       </section>
       <section className='w-full'>
-        <div className='flex flex-col items-center w-full h-full gap-20 py-16 bg-silver-betis'>
-          <span className='text-xl font-bold text-green-betis'>
-            What Do They Say?
-          </span>
-          <div className='flex flex-col gap-4 p-8 text-white rounded w-80 h-80 bg-green-betis'>
-            <div className='grid items-center grid-cols-3 gap-5'>
-              <div className='col-span-1 '>
-                <Image
-                  alt='profile picture'
-                  src='/assets/profile_picture.svg'
-                  width={82}
-                  height={82}
-                />
-              </div>
-              <div className='flex flex-col col-span-2 bg-red'>
-                <span className='font-semibold'>Yulita</span>
-                <span>Peserta BETIS 2019</span>
-              </div>
-            </div>
-            <div className='w-full text-justify'>
-              <span className='text-sm'>
-                Aku seneng banget bisa belajar di BETIS 2021. Selain dapat ilmu,
-                kakak-kakak yang ngajar asik banget aku jadi paham materinya.
-                Terus mentor aku juga baik banget! :D
-              </span>
-            </div>
-          </div>
-        </div>
+        <TestimonialSection />
       </section>
       <section className='w-full'>
         <div className='flex flex-col gap-8 py-12 px-11'>
