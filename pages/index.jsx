@@ -13,21 +13,8 @@ const Home = () => {
       <section className='w-full'>
         <TestimonialSection />
       </section>
-      <section className='w-full'>
-        <div className='flex flex-col gap-8 py-12 px-11'>
-          <div className='flex flex-col items-center gap-2 text-xl font-bold text-green-betis'>
-            <span>Special Thanks</span>
-            <span>to Our Sponsor!</span>
-          </div>
-          <div className='flex items-center justify-center w-full h-56 bg-black-betis '>
-            <Image
-              alt='play'
-              src='/assets/Youtube.svg'
-              width={35}
-              height={23}
-            />
-          </div>
-        </div>
+      <section className='w-full lg:h-screen'>
+        <SponsorshipSection />
       </section>
       <footer className='bg-silver-betis'>
         <div className='flex flex-col items-center w-full py-12 text-center gap-9'>
